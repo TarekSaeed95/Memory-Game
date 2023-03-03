@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+}
+body{
+    position: relative;
+}
+.overlay{
+    background-color:#0a0d0ec2;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+}
+.overlay .button{
+    background-color: #f44336;
+    color: white;
+    padding: 10px 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    border-radius: 10px;
+    z-index: 5;
+    cursor: pointer;
+}
+.container{
+    padding:20px 50px;
+}
+.container .top-area{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    border: solid 3px #006cbe;
+    ;
+    border-radius: 10px;
+}
+.container .bot-area{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns:repeat(5,150px);
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}.container .bot-area.no-clicking{
+    pointer-events: none;
+}
+.container .bot-area .block{
+    position: relative;
+    width: 150px;
+    height:150px;
+    transform-style: preserve-3d;
+    transition: .5s;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.container .bot-area .block.flip{
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
+.container .bot-area .block.matched{
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
+.container .bot-area img {
+    width: 150px;
+    height:150px;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 0px;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+
+
+    }
+    .container .bot-area .front {
+        background-color: #202124;
+        width: 100%;
+        height:100%;
+        position: absolute;
+        left: 0px;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    } 
+    .container .bot-area .front::before{
+        content: "!";
+        color: #006cbe;
+        font-size: 150px;
+        font-weight: bold;
+        max-height: 100%;
+        padding: 0px;
+        line-height: 1;
+    }
+.game-over{
+    position: absolute;
+    background-color:#0a0d0ec2;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 6;
+  
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding: auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+.result{
+    background-color: #dedede;
+    margin: 50px auto 0px;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.result li {
+    list-style: none;
+    font-size: 20px;
+    background-color: #191b23;
+    padding: 10px 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+.winner-block {
+    background-color:#0a0d0ec2;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+    display: none;
+}
+.winner{
+
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+}
+
+.intro{
+    background-color:#0a0d0ec2;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 6;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: .5s;
+}
+.intro .box{
+background-color: #202124;
+padding: 50px;
+border-radius: 50px;
+/* width: fit-content; */
+}
+.intro input {
+    color: #006cbe;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+.intro .introbutton{
+background-color: #006cbe;
+color: white;
+font-size: 24px;
+padding: 20px 30px;
+margin-top: 20px;
+text-align: center;
+border-radius: 20px;
+cursor: pointer;}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="Memory.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+
+     <style>
+    </style>
+  </head>
+  <body>
+    <div class="intro">
+      <div class="box">
+      <input type="text" placeholder="Put Your Name">
+      <div class="introbutton">Start</div></div>
+    </div>
+    <div class="game-over">
+        GAME OVER
+        <audio src="audios/Gameover.wav" class="over-sound" preload="auto"></audio>
+    </div>
+    <audio class="game-music" src="audios/speck_-_Waiting_On_The_Precipice.mp3" preload="auto"></audio>
+    <audio class="success-sound" src="audios/mixkit-arcade-retro-changing-tab-206.wav" preload="auto"></audio>
+    <audio class="failure-sound" src="audios/mixkit-arcade-mechanical-bling-210.wav" preload="auto"></audio>
+    <div class="overlay">
+        <div class="button">Start Game</div>
+    </div>
+    <div class="container">
+      <div class="top-area">
+        <span >Hello: <span class="welcome"></span> </span>
+        <span>Wrong Tries:<span class="tries"> 0</span> </span>
+      </div>
+      <div class="bot-area">
+        <div class="block" data-technology="Angular">
+          <img src="imgs/Angular.png">
+          <span class="front"></span>
+        </div>
+        <div class="block" data-technology="Angular">
+          <img src="imgs/Angular.png" data-technology="Angular"  >
+          <span class="front"></span>
+        </div>
+        <div class="block"data-technology="css">
+          <img src="imgs/css.png" data-technology="css" >
+          <span class="front"></span>
+        </div>
+        <div class="block"data-technology="css">
+          <img src="imgs/css.png"data-technology="css"  >
+          <span class="front"></span>
+        </div>
+        <div class="block"data-technology="github">
+          <img src="imgs/github.png" data-technology="github" >
+          <span class="front"></span>
+        </div>
+        <div class="block"data-technology="github">
+          <img src="imgs/github.png" data-technology="github"  >
+          <span class="front"></span>
+        </div>
+        <div class="block"data-technology="gulp">
+          <img src="imgs/gulp.png"data-technology="gulp"  >
+          <span class="front"></span>
+        </div>
+        <div class="block"data-technology="gulp" >
+          <img src="imgs/gulp.png"data-technology="gulp"  >
+          <span class="front"></span>
+        </div>
+        <div class="block"data-technology="html">
+          <img src="imgs/html.png"data-technology="html"  >
+          <span class="front"></span>
+        </div>
+        <div class="block"data-technology="html">
+          <img src="imgs/html.png" data-technology="html" >
+          <span class="front"></span>
+        </div>
+        <div class="block"data-technology="jest" >
+          <img src="imgs/jest.png"data-technology="jest"  >
+          <span class="front"></span>
+        </div>
+        <div class="block"data-technology="jest"  >
+          <img src="imgs/jest.png"data-technology="jest"  >
+          <span class="front"></span>
+        </div>
+        <div class="block"data-technology="mongo">
+          <img src="imgs/mongo.png" data-technology="mongo" >
+          <span class="front"></span>
+        </div>
+        <div class="block"data-technology="mongo">
+          <img src="imgs/mongo.png"data-technology="mongo"  >
+          <span class="front"></span>
+        </div>
+        <div class="block"data-technology="react">
+          <img src="imgs/react.png"data-technology="react"  >
+          <span class="front"></span>
+        </div>
+        <div class="block"data-technology="react" >
+          <img src="imgs/react.png" data-technology="react" >
+          <span class="front"></span>
+        </div>
+        <div class="block"data-technology="vue">
+          <img src="imgs/vue.png" data-technology="vue" >
+          <span class="front"></span>
+        </div>
+        <div class="block"data-technology="vue">
+          <img src="imgs/vue.png" data-technology="vue" >
+          <span class="front"></span>
+        </div>
+        <div class="block"data-technology="python">
+          <img src="imgs/python.png"data-technology="python"  >
+          <span class="front"></span>
+        </div>
+        <div class="block"data-technology="python">
+          <img src="imgs/python.png"data-technology="python"  >
+          <span class="front"></span>
+        </div>
+      </div>
+      <div class="result">
+
+      </div>
+    </div>
+    <div class="winner-block">
+      <audio class="winneraudio" src="audios/SXVU8MC-brass-winner-fanfare.mp3" preload="auto" ></audio>
+    <img class="winner" src="imgs/giphy.gif" alt=""></div>
+    <audio src=""></audio>
+    <script src="Memory.js"></script>
+  </body>
+</html>
